@@ -1,0 +1,80 @@
+html {
+  overflow-y: scroll;/* make scrollbar transparent */
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+body {
+	font-family: "Rock Salt";
+	text-align: center;
+	background-size: 40px 40px;
+	background-image:
+      linear-gradient(to right, grey 1px, transparent 1px),/* graph paper background drawn */
+      linear-gradient(to bottom, grey 1px, transparent 1px);
+}
+.container {
+	height: 720px;
+}
+#logoImg {
+	display: block;
+	margin: 0 auto;
+	width: 500px;
+}
+#startBtn {
+	background-color: transparent;
+  	border: 2px solid black;
+  	border-radius: 8px;
+  	color: black;
+  	padding: 16px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	font-family: "Rock Salt";
+  	font-size: 24px;
+  	transition-duration: 0.4s;
+  	-moz-transition-duration: 0.4s;
+  	-webkit-transition-duration: 0.4s;
+  	cursor: pointer;
+}
+#startBtn:hover {
+	background-color: black;
+  	color: white;
+}
+img {
+	display: none;
+}
+#myCanvas {
+	display: block;
+	position: absolute;
+  	left: 0px;
+  	top: 2px;
+}
+#overlay {
+  position: fixed;/* overlay message covering the page */
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);/* 50% opaque */
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);/* move text to center of overlay */
+  -ms-transform: translate(-50%,-50%);
+}
+#exit{
+	position: absolute;
+  	bottom: 0;
+  	left: 50%;
+  	color: white;
+}

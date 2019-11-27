@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BuzzOver</title>
+	<link rel="icon" type="image/png" href="assets/buzzover.png">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="js/lib/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<audio id="myAudio">
+  			<source src="assets/gameover.mp3" type="audio/mpeg">
+  			Your browser does not support the audio element.
+		</audio>
+		<audio id="myAudioWin">
+  			<source src="assets/gamewin.mp3" type="audio/mpeg">
+  			Your browser does not support the audio element.
+		</audio>
+		<img src="assets/bkg.png">
+		<canvas id="myCanvas" width="1349" height="759"></canvas>
+		<div id="overlay">
+  			<div id="text"></div>
+  			<a id="exit" href="index.html">Exit</a>
+		</div>
+	</div>
+	<div class="footer">
+		<p>Designed and Coded by : surhud004 &copy; 2019</p><!-- Build Date : 25th November 2019 -->
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
